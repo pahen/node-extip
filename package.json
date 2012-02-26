@@ -1,0 +1,16 @@
+{
+	"name": "extip",
+	"version": "0.0.1",
+	"description": "Fetch your external IP-adress",
+	"keywords": [
+        "ip",
+        "network",
+        "external"
+    ],
+	"author": "Patrik Henningsson <patrik.henningsson@gmail.com>",
+	"repository": "git://github.com/pahen/node-extip",
+	"main": "./lib/extip",
+	"bin": {
+		"myip": "./bin/extip"
+	}
+}

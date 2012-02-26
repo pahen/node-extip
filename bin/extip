@@ -1,0 +1,55 @@
+#!/usr/bin/env node
+
+var extip = require('./../lib/extip');
+
+// Usage documentation
+var usage = '' +
+	'Usage: myip [options]' +
+	'\n' +
+	'\nOptions:' +
+	'\n  -p, --proxy HOST:PORT   Use proxy when doing connections (port default is 8888)' +
+	'\n  -v, --version           Output version number' +
+	'\n  -h, --help              Display help information' +
+	'\n';
+
+// Use proxy or not
+var proxy = null;
+
+// Parse arguments
+var args = process.argv.slice(2);
+while (args.length) {
+	var arg = args.shift();
+	switch (arg) {
+		case '-h':
+		case '--help':
+			console.log(usage + '\n');
+			process.exit(1);
+			break;
+		case '-v':
+		case '--version':
+			console.log(require('./../lib/version').version);
+			process.exit(1);
+			break;
+		case '-p':
+		case '--proxy':
+			if (arg = args.shift()) {
+				proxy = arg;
+			} else {
+				throw new Error('--proxy requires a value (host:port)');
+			}
+			break;
+	}
+}
+
+extip.proxy(proxy).fetch(
+	function (ip) {
+		console.log(ip);
+	},
+	function (errors) {
+		console.log('FAILED:');
+		errors.forEach(function (err) {
+			console.log(' - ' + err);
+		});
+		process.exit(1);
+	}
+);
