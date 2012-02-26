@@ -10,7 +10,7 @@ A command line interface and npm package for fetching your external IP-address.
 
 The command line interface looks like this.
 
-	myip [options]
+	extip [options]
 
 You can also require it as a module.
 

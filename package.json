@@ -11,6 +11,6 @@
 	"repository": "git://github.com/pahen/node-extip",
 	"main": "./lib/extip",
 	"bin": {
-		"myip": "./bin/extip"
+		"extip": "./bin/extip"
 	}
 }

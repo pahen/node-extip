@@ -4,7 +4,7 @@ var extip = require('./../lib/extip');
 
 // Usage documentation
 var usage = '' +
-	'Usage: myip [options]' +
+	'Usage: extip [options]' +
 	'\n' +
 	'\nOptions:' +
 	'\n  -p, --proxy HOST:PORT   Use proxy when doing connections (port default is 8888)' +
