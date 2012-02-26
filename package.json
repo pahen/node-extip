@@ -1,7 +1,13 @@
 {
 	"name": "extip",
-	"version": "0.0.1",
-	"description": "Fetch your external IP-adress",
+	"version": "0.0.2",
+	"licenses" : [
+	    {
+	      "type" : "MIT",
+	      "url" : "https://github.com/pahen/node-extip/raw/master/LICENSE"
+	    }
+  	],
+	"description": "CLI and NPM package for fetching your external IP-address.",
 	"keywords": [
         "ip",
         "network",
@@ -9,6 +15,7 @@
     ],
 	"author": "Patrik Henningsson <patrik.henningsson@gmail.com>",
 	"repository": "git://github.com/pahen/node-extip",
+	"homepage" : "https://github.com/pahen/node-extip",
 	"main": "./lib/extip",
 	"bin": {
 		"extip": "./bin/extip"
