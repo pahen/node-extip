@@ -7,7 +7,7 @@ var usage = '' +
 	'Usage: extip [options]' +
 	'\n' +
 	'\nOptions:' +
-	'\n  -p, --proxy HOST:PORT   Use proxy when doing connections (port default is 8888)' +
+	'\n  -p, --proxy URL         Use proxy when doing connections' +
 	'\n  -v, --version           Output version number' +
 	'\n  -h, --help              Display help information' +
 	'\n';
@@ -35,7 +35,7 @@ while (args.length) {
 			if (arg = args.shift()) {
 				proxy = arg;
 			} else {
-				throw new Error('--proxy requires a value (host:port)');
+				throw new Error('--proxy requires an URL');
 			}
 			break;
 	}
