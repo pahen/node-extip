@@ -29,4 +29,4 @@ You can also require it as a module.
 
 And using a proxy ..
 
-	extip.proxy('10.0.0.1:8080').fetch();
+	extip.proxy('http://10.0.0.1:8080').fetch();

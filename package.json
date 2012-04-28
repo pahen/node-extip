@@ -1,6 +1,9 @@
 {
 	"name": "extip",
-	"version": "0.0.2",
+	"version": "0.0.3",
+	"author": "Patrik Henningsson <patrik.henningsson@gmail.com>",
+	"repository": "git://github.com/pahen/node-extip",
+	"homepage" : "https://github.com/pahen/node-extip",
 	"licenses" : [
 	    {
 	      "type" : "MIT",
@@ -13,9 +16,12 @@
         "network",
         "external"
     ],
-	"author": "Patrik Henningsson <patrik.henningsson@gmail.com>",
-	"repository": "git://github.com/pahen/node-extip",
-	"homepage" : "https://github.com/pahen/node-extip",
+    "engines": [
+    	"node >= 0.4.0"
+  	],
+  	"dependencies": {
+  		"request": "2.9.*"
+  	},
 	"main": "./lib/extip",
 	"bin": {
 		"extip": "./bin/extip"
