@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/pahen/node-extip.png)](http://travis-ci.org/pahen/node-extip)
 # node-extip
 
 A command line interface and npm package for fetching your external IP-address.
