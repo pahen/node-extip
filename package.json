@@ -1,6 +1,6 @@
 {
 	"name": "extip",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"author": "Patrik Henningsson <patrik.henningsson@gmail.com>",
 	"repository": "git://github.com/pahen/node-extip",
 	"homepage" : "https://github.com/pahen/node-extip",
